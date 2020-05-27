@@ -26,9 +26,9 @@ class DatabaseSyncer {
             return
         }
 
-        if lastDatabaseSync == nil || -(lastDatabaseSync!.timeIntervalSinceNow) > databaseSyncInterval {
+        /*if lastDatabaseSync == nil || -(lastDatabaseSync!.timeIntervalSinceNow) > databaseSyncInterval {
             syncDatabase(completionHandler: completionHandler)
-        }
+        }*/
     }
 
     func forceSyncDatabase() {
